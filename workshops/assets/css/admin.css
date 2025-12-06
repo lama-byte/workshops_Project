@@ -1,0 +1,386 @@
+ /* admin css */
+
+ /* Page background */
+ body {
+     background-color: #e6e2c5;
+ }
+
+ /* Main admin container */
+ main#admin-main {
+     margin: 2em;
+     padding: 3em;
+     background-color: #f5f5f5;
+     border-radius: 15px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+         'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ /* Page titles */
+ #admin-main h1 {
+     font-family: "Lora", serif;
+     font-size: 2.3em;
+     color: rgb(43, 69, 147);
+     margin-bottom: 0.6em;
+ }
+
+ #admin-main h2 {
+     font-family: "Lora", serif;
+     font-size: 1.5em;
+     margin: 1.4em 0 0.6em;
+     color: #222;
+ }
+
+ /* Layout section */
+ #admin-content {
+     display: flex;
+     flex-direction: column;
+     gap: 1.5em;
+ }
+
+ /* Form styling */
+ .admin-form {
+     background-color: #e6e2c5;
+     border: 1px solid black;
+     padding: 1.5em;
+     border-radius: 15px;
+ }
+
+ .admin-form .row {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1em;
+     margin-bottom: 0.8em;
+ }
+
+ .admin-form label {
+     display: flex;
+     flex-direction: column;
+     min-width: 220px;
+     font-weight: 600;
+ }
+
+ /* Inputs */
+ .admin-form input[type="text"],
+ .admin-form input[type="number"],
+ .admin-form input[type="date"],
+ .admin-form input[type="time"],
+ .admin-form textarea {
+     padding: 6px 8px;
+     border-radius: 8px;
+     border: 1px solid #999;
+     margin-top: 4px;
+ }
+
+ .admin-form textarea {
+     resize: vertical;
+     min-height: 60px;
+ }
+
+ /* Buttons */
+ .admin-form button,
+ .admin-form .button {
+     font-size: 1em;
+     font-family: "Lemon", serif;
+     background-color: rgb(43, 69, 147);
+     color: rgb(240, 237, 187);
+     cursor: pointer;
+     border: 2px solid rgb(43, 69, 147);
+     border-radius: 15px;
+     padding: 8px 18px;
+     margin-top: 6px;
+     text-decoration: none;
+     display: inline-block;
+ }
+
+ .admin-form button:hover,
+ .admin-form .button:hover {
+     background-color: rgb(244, 212, 212);
+     color: white;
+ }
+
+ /* Messages (errors & success) */
+ .message {
+     padding: 10px 12px;
+     border-radius: 8px;
+     font-size: 0.9em;
+ }
+
+ .message.success {
+     background: #dcfce7;
+     color: #166534;
+ }
+
+ .message.error {
+     background: #fee2e2;
+     color: #b91c1c;
+ }
+
+ /* Workshops Table */
+ table.admin-table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 1em;
+     background-color: #e6e2c5;
+     border-radius: 15px;
+     overflow: hidden;
+ }
+
+ table.admin-table th,
+ table.admin-table td {
+     border: 1px solid black;
+     padding: 0.7em 1em;
+     font-size: 1.15em;
+     /* BIGGER TEXT */
+ }
+
+
+
+ table.admin-table th {
+     background-color: rgb(43, 69, 147);
+     color: whitesmoke;
+     font-weight: 600;
+ }
+
+ table.admin-table td .button {
+     font-size: 0.85em;
+     padding: 4px 10px;
+     margin-right: 4px;
+ }
+
+ table.admin-table td .button.delete {
+     background-color: darkred;
+     border-color: darkred;
+ }
+
+ #welcome {
+     display: inline-block;
+ }
+
+ main {
+     display: flex;
+     padding: 3em;
+     align-items: center;
+     justify-content: space-between;
+     background-color: whitesmoke;
+     gap: 40px;
+ }
+
+
+ #reasons .card {
+     border: 2px solid black;
+     padding: 20px;
+ }
+
+ main h1 {
+     font-family: "Lora", serif;
+     font-size: 3.3em;
+     font-weight: 700;
+     font-style: normal;
+     color: rgb(43, 69, 147);
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+ }
+
+ main p {
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: 1em;
+     font-weight: 20;
+     font-style: normal;
+ }
+
+ main a {
+     display: block;
+     margin: 20px auto 0;
+ }
+
+ main a>button {
+     size: 3em;
+     font-size: 20px;
+     font-family: "Lemon", serif;
+     color: rgb(234, 183, 14);
+     cursor: pointer;
+     border: 2.5px solid rgb(234, 183, 14);
+     border-radius: 15px;
+     padding: 15px 30px;
+     margin: 0 auto;
+ }
+
+ main a>button:hover {
+     background-color: rgb(244, 212, 212);
+     color: white;
+ }
+
+ /* ===============================
+   RESPONSIVE MEDIA QUERIES
+   =============================== */
+
+ /* ---------- 1) Large Tablets (max-width: 1200px) ---------- */
+ @media (max-width: 1200px) {
+
+     main#admin-main {
+         margin: 1.5em;
+         padding: 2.2em;
+     }
+
+     #admin-main h1 {
+         font-size: 2em;
+     }
+
+     table.admin-table th,
+     table.admin-table td {
+         font-size: 1em;
+     }
+
+     .admin-form .row {
+         gap: 0.6em;
+     }
+ }
+
+
+ /* ---------- 2) Tablets (max-width: 992px) ---------- */
+ @media (max-width: 992px) {
+
+     main#admin-main {
+         margin: 1.2em;
+         padding: 2em;
+     }
+
+     /* Make form fields stack more */
+     .admin-form .row {
+         flex-direction: column;
+     }
+
+     .admin-form label {
+         min-width: 100%;
+     }
+
+     /* Table font smaller, padding reduced */
+     table.admin-table th,
+     table.admin-table td {
+         padding: 0.5em 0.7em;
+         font-size: 0.95em;
+     }
+
+     /* Main hero layout */
+     main#admin-main {
+         flex-direction: column;
+         text-align: center;
+         gap: 30px;
+     }
+
+     main#admin-main h1 {
+         font-size: 2.5em;
+     }
+
+     main#admin-main p {
+         font-size: 0.95em;
+     }
+ }
+
+
+ /* ---------- 3) Small Tablets & Large Phones (max-width: 768px) ---------- */
+ @media (max-width: 768px) {
+
+     main#admin-main {
+         margin: 1em;
+         padding: 1.5em;
+         border-radius: 10px;
+     }
+
+     #admin-main h1 {
+         font-size: 1.8em;
+         text-align: center;
+     }
+
+     #admin-main h2 {
+         text-align: center;
+     }
+
+     .admin-form {
+         padding: 1.2em;
+     }
+
+     .admin-form button,
+     .admin-form .button {
+         width: 100%;
+         text-align: center;
+         padding: 10px;
+         font-size: 1em;
+     }
+
+     table.admin-table {
+         font-size: 0.85em;
+     }
+
+     table.admin-table th,
+     table.admin-table td {
+         padding: 0.45em;
+     }
+
+     /* Make homepage hero button centered */
+     main#admin-main a {
+         margin: 15px auto 0;
+     }
+
+     main#admin-main a>button {
+         font-size: 16px;
+         padding: 12px 22px;
+     }
+ }
+
+
+ /* ---------- 4) Phones (max-width: 576px) ---------- */
+ @media (max-width: 576px) {
+
+     body {
+         background-color: #f5f5f5;
+     }
+
+     main#admin-main {
+         margin: 0.5em;
+         padding: 1.2em;
+     }
+
+     #admin-main h1 {
+         font-size: 1.6em;
+     }
+
+     /* Forms fully stacked, readable */
+     .admin-form label {
+         min-width: 100%;
+         font-size: 0.9em;
+     }
+
+     .admin-form input,
+     .admin-form textarea {
+         font-size: 0.9em;
+         padding: 5px 7px;
+     }
+
+     /* Table goes fully scrollable on small screens */
+     table.admin-table {
+         display: block;
+         overflow-x: auto;
+         white-space: nowrap;
+     }
+
+     table.admin-table th,
+     table.admin-table td {
+         font-size: 0.85em;
+         padding: 0.4em;
+     }
+
+     /* Hero text smaller */
+     main#admin-main h1 {
+         font-size: 2em;
+     }
+
+     main#admin-main p {
+         font-size: 0.85em;
+     }
+
+     main#admin-main a>button {
+         font-size: 14px;
+         padding: 10px 20px;
+     }
+ }

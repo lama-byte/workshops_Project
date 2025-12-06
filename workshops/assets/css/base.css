@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e6e2c5;
+}
+
+header,
+footer {
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    background-color: rgb(43, 69, 147);
+    flex-wrap: wrap;
+    font-family: "Lora", serif;
+    font-weight: 600;
+    font-style: normal;
+    
+}
+
+header {
+    border-bottom: 4px solid whitesmoke;
+}
+
+
+body>p {
+    display: flex;
+    background-color: darkred;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: whitesmoke;
+    font-weight: 400;
+    padding: 2px 30px;
+}
+
+header section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    padding: 15px 30px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(240, 237, 187);
+    font-size: 3.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+header section input {
+    width: 40%;
+    margin: 1em 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+
+.headerNav {
+    margin: 20px 15px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+}
+
+.headerNav,
+.nav-left,
+.nav-right {
+    gap: 20px;
+}
+
+
+.headerNav a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-family: "Lemon", serif;
+    color: whitesmoke;
+    font-size: 2em;
+}
+
+
+footer {
+    border-top: 4px solid whitesmoke;
+    justify-content: space-between;
+    color: whitesmoke;
+    font-weight: 400;
+}
+
+footer p {
+    padding: 15px 30px;
+    display: block;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 15px 30px;
+    color: whitesmoke;
+}
+
+main {
+    margin: 2em;
+    padding: 3em;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+
+
+/* ---------- 1) Large Tablets (max-width: 1200px) ---------- */
+@media (max-width: 1200px) {
+
+    header section h1 {
+        font-size: 2.1em;
+    }
+
+    header section input {
+        width: 50%;
+    }
+
+    .headerNav a {
+        font-size: 1.1em;
+        padding: 20px 10px;
+    }
+}
+
+
+
+/* ---------- 2) Tablets (max-width: 992px) ---------- */
+@media (max-width: 992px) {
+
+    /* Header section stacks more comfortably */
+    header section {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    header section input {
+        width: 70%;
+        margin: 0.5em 0 1em;
+    }
+
+    /* Navigation collapses into two rows */
+    .headerNav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav-left,
+    .nav-right {
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .headerNav a {
+        padding: 15px 10px;
+        font-size: 1.05em; 
+    }
+
+    main {
+        margin: 1.5em;
+        padding: 2em;
+    }
+}
+
+
+
+/* ---------- 3) Phones (max-width: 768px) ---------- */
+@media (max-width: 768px) {
+
+    /* Stack everything in header neatly */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    header section h1 {
+        font-size: 1.9em;
+        padding: 10px 0;
+    }
+
+    header section input {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    /* Navigation becomes a centered column */
+    .headerNav {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .nav-left,
+    .nav-right {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .headerNav a {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    /* Footer stacks for phones */
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    footer p,
+    footer a {
+        padding: 10px 0;
+    }
+
+    /* Main content fits screen */
+    main {
+        margin: 1em;
+        padding: 1.5em;
+        border-radius: 10px;
+    }
+}

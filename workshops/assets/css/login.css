@@ -1,0 +1,168 @@
+main {
+    margin: 2em auto;
+    background-color: whitesmoke;
+    padding: 3em;
+    width: 60%;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#login h2 {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    color: rgb(43, 69, 147);
+    font-size: 2em;
+    margin: 40px auto;
+}
+
+#loginForm fieldset {
+    border: none;
+    margin-bottom: 1.5em;
+}
+
+#loginForm input {
+    width: 70%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid rgb(43, 69, 147);
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    outline: none;
+}
+
+#loginForm input:focus {
+    border-color: rgb(101, 100, 160);
+    background-color: rgb(252, 244, 255);
+}
+
+#loginForm #loginBtn {
+    padding: 15px 40px;
+    background-color: transparent;
+    border-radius: 15px;
+    border: 2.5px solid rgb(43, 69, 147);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Lora", serif;
+    color: rgb(43, 69, 147);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#loginForm #loginBtn:hover {
+    background-color: rgb(101, 107, 157);
+    color: white;
+}
+
+
+#login p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 1.5em;
+}
+
+#login a {
+    color: rgb(43, 69, 147);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+#loginForm label {
+    text-align: left;
+    width: 70%;
+    margin: 20px auto 8px;
+    display: block;
+}
+
+.error {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    padding: 2px 30px;
+    background-color: rgb(255, 241, 115);
+    color: black;
+}
+
+/* ---------- 1) Large Tablets (max-width: 1200px) ---------- */
+@media (max-width: 1200px) {
+
+    main {
+        width: 70%;
+        padding: 2.5em;
+    }
+
+    #loginForm input {
+        width: 80%;
+    }
+
+    #loginForm label {
+        width: 80%;
+    }
+}
+
+
+
+/* ---------- 2) Tablets (max-width: 992px) ---------- */
+@media (max-width: 992px) {
+
+    main {
+        width: 80%;
+        padding: 2.2em;
+    }
+
+    #login h2 {
+        font-size: 1.8em;
+        margin: 30px auto;
+    }
+
+    #loginForm input {
+        width: 85%;
+        font-size: 0.95em;
+    }
+
+    #loginForm label {
+        width: 85%;
+        font-size: 0.95em;
+    }
+
+    #loginForm #loginBtn {
+        font-size: 18px;
+        padding: 12px 32px;
+    }
+}
+
+
+
+/* ---------- 3) Phones (max-width: 768px) ---------- */
+@media (max-width: 768px) {
+
+    main {
+        width: 90%;
+        padding: 1.8em;
+        border-radius: 12px;
+    }
+
+    #login h2 {
+        font-size: 1.6em;
+        margin: 20px auto;
+    }
+
+    #loginForm input {
+        width: 95%;
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    #loginForm label {
+        width: 95%;
+        font-size: 0.9em;
+        margin: 8px auto 4px;
+    }
+
+    #loginForm #loginBtn {
+        padding: 12px 25px;
+        font-size: 17px;
+        border-radius: 12px;
+    }
+
+    #login p {
+        font-size: 0.9em;
+    }
+}

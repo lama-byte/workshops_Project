@@ -1,0 +1,251 @@
+main {
+    margin: 2em auto;
+    background-color: whitesmoke;
+    width: 60%;
+}
+
+#signup {
+    width: 90%;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    padding: 2em;
+    border-radius: 15px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#signup h2 {
+    font-family: "Lora", serif;
+    font-weight: 700;
+    color: rgb(43, 69, 147);
+    font-size: 2em;
+    text-align: center;
+    margin: 40px auto;
+
+}
+
+form {
+    width: 90%;
+    margin: auto;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 40px;
+}
+
+#togglePassword {
+    margin: 0 1em;
+}
+
+#liveFeedback {
+    display: flex;
+    text-align: left;
+    margin: 0 1em;
+}
+
+.row div {
+    width: 95%;
+}
+
+label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    color: rgb(80, 80, 80);
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 15px;
+    font-size: 0.9em;
+    border: 2px solid rgb(43, 69, 147);
+    border-radius: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(80, 80, 80);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: rgb(150, 150, 150);
+}
+
+#signUpBtn {
+    display: block;
+    margin: 40px auto 0;
+    font-size: 20px;
+    color: rgb(43, 69, 147);
+    background-color: transparent;
+    cursor: pointer;
+    border: 2.5px solid rgb(43, 69, 147);
+    border-radius: 15px;
+    padding: 15px 40px;
+    transition: 0.2s;
+    font-weight: bold;
+    font-family: "Lora", serif;
+}
+
+button:hover {
+    background-color: rgb(90, 107, 156);
+    color: white;
+}
+
+#signup p {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+#signup p a {
+    color: rgb(43, 69, 147);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#signup p a:hover {
+    text-decoration: underline;
+}
+
+.msg {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    margin-bottom: 2em 0;
+    padding: 2px 30px;
+    background-color: rgb(255, 241, 115);
+    color: black;
+    display: flex;
+    width: 100%;
+}
+
+/* ---------- 1) Large Tablets (max-width: 1200px) ---------- */
+@media (max-width: 1200px) {
+
+    main {
+        width: 70%;
+    }
+
+    #signup {
+        width: 95%;
+        padding: 2em;
+    }
+
+    form {
+        width: 95%;
+    }
+
+    .row {
+        gap: 25px;
+    }
+}
+
+
+
+/* ---------- 2) Tablets (max-width: 992px) ---------- */
+@media (max-width: 992px) {
+
+    main {
+        width: 80%;
+        padding: 2em;
+    }
+
+    #signup h2 {
+        font-size: 1.8em;
+        margin: 25px auto;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .row div,
+    #Email {
+        width: 100%;
+    }
+
+    label {
+        font-size: 0.95em;
+    }
+
+    input {
+        padding: 12px;
+        font-size: 0.95em;
+    }
+
+    #signUpBtn {
+        font-size: 18px;
+        padding: 12px 30px;
+    }
+}
+
+
+
+/* ---------- 3) Phones (max-width: 768px) ---------- */
+@media (max-width: 768px) {
+
+    main {
+        width: 92%;
+        padding: 1.8em;
+    }
+
+    #signup {
+        padding: 1.8em;
+        width: 100%;
+    }
+
+    #signup h2 {
+        font-size: 1.6em;
+        margin: 20px auto;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .row div,
+    #Email {
+        width: 100%;
+    }
+
+    label {
+        font-size: 0.9em;
+        margin-bottom: 5px;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    #togglePassword,
+    #liveFeedback {
+        margin-left: 0;
+    }
+
+    #signUpBtn {
+        margin-top: 25px;
+        font-size: 17px;
+        padding: 10px 25px;
+        border-radius: 12px;
+    }
+
+    #signup p {
+        font-size: 0.9em;
+        margin-top: 15px;
+    }
+}
